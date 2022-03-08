@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'epubpower'
+    'epubpower_app'
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'epubpower.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR/'frontend'/'public'/'index.html'],
+        'DIRS': [BASE_DIR/'frontend'/'public'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

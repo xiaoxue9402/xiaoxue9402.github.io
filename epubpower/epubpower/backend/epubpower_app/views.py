@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from . import sample_epubs
+from .models import Book
 
 
-books = [sample_epubs]
 def index(request):
-    return render(request,'index', {
-        'book': books
+    return render(request,'index.html', {
+        'book': Book.objects.all()
     })
